@@ -19,6 +19,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 from portf import views
 
+handler404 = 'portf.views.error_404'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
